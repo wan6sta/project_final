@@ -1,0 +1,13 @@
+@import "reset";
+@import "variables/global";
+@import "themes/dark";
+@import "themes/light";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.app {
+ font: var(--font-m);
+ background-color: var(--bg-color);
+ color: var(--secondary-color);
+
+ min-height: 100vh;
+}
