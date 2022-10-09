@@ -4,11 +4,12 @@ import {AboutPageAsync} from './pages/AboutPage/AboutPage.async'
 import {MainPageAsync} from './pages/MainPage/MainPage.async'
 import {Suspense} from 'react'
 import {useTheme} from './theme/useTheme';
+import {classNames} from './helpers/classNames/classNames';
 
 export const App = () => {
   const {theme, changeTheme} = useTheme()
 
-  return <div className={`app ${theme}`}>
+  return <div className={classNames('app', {}, [theme])}>
     <Link to={'/'}>MAIN</Link>
     <Link to={'/about'}>ABOUT</Link>
 
