@@ -2,6 +2,7 @@ import {FC} from 'react'
 import {cn} from 'shared/lib/classNames/cn'
 import cls from './Navbar.module.scss'
 import {AppLink, AppLinkTheme} from 'shared/ui/AppLink/AppLink';
+import {useTranslation} from 'react-i18next';
 
 interface NavbarProps {
   className?: string
@@ -9,6 +10,8 @@ interface NavbarProps {
 
 export const Navbar: FC<NavbarProps> = (props) => {
   const {className} = props
+
+  const {t} = useTranslation()
 
   return <div className={cn(cls.Navbar, {}, [className])}>
     <div>
@@ -20,14 +23,14 @@ export const Navbar: FC<NavbarProps> = (props) => {
         theme={AppLinkTheme.WHITE}
         to={'/'}
       >
-        MAIN
+        {t('Главная')}
       </AppLink>
 
       <AppLink
         theme={AppLinkTheme.WHITE}
         to={'/about'}
       >
-        ABOUT
+        {t('О сайте')}
       </AppLink>
     </div>
   </div>
