@@ -1,18 +1,17 @@
 .Navbar {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 0 20px;
- flex: 1;
-
- width: 100%;
- height: var(--navbar-height);
- background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex: 1;
+  width: 100%;
+  height: var(--navbar-height);
+  background-color: var(--primary-color);
 }
 
 .links {
- display: flex;
- align-items: center;
- justify-self: end;
- column-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  column-gap: 10px;
 }

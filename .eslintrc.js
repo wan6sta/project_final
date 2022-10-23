@@ -7,7 +7,8 @@ module.exports = {
 	'extends': [
 		'eslint:recommended',
 		'plugin:react/recommended',
-		'plugin:@typescript-eslint/recommended'
+		'plugin:@typescript-eslint/recommended',
+		'plugin:i18next/recommended'
 	],
 	'overrides': [],
 	'parser': '@typescript-eslint/parser',
@@ -17,7 +18,8 @@ module.exports = {
 	},
 	'plugins': [
 		'react',
-		'@typescript-eslint'
+		'@typescript-eslint',
+		'i18next'
 	],
 	'rules': {
 		'indent': [
@@ -39,6 +41,7 @@ module.exports = {
 		'react/react-in-jsx-scope': 'off',
 		'react/jsx-filename-extension': [2, { extensions: ['.ts', '.tsx'] }],
 		'object-curly-spacing': [2, 'always'],
-		'@typescript-eslint/ban-ts-comment': 'warn'
+		'@typescript-eslint/ban-ts-comment': 'warn',
+		'i18next/no-literal-string': ['error', { markupOnly: true }]
 	}
 }
